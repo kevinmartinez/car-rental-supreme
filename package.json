@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/kevinmartinez/car-rental-supreme#readme",
   "dependencies": {
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "standard": "^11.0.0"
   }
