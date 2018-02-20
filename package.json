@@ -1,0 +1,32 @@
+{
+  "name": "car-rental-supreme",
+  "version": "0.1.0",
+  "description": "a full-stack car rental system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinmartinez/car-rental-supreme.git"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "mongodb",
+    "mongoose",
+    "ejs",
+    "mocha",
+    "chai"
+  ],
+  "author": "Kevin Martinez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kevinmartinez/car-rental-supreme/issues"
+  },
+  "homepage": "https://github.com/kevinmartinez/car-rental-supreme#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "standard": "^11.0.0"
+  }
+}
