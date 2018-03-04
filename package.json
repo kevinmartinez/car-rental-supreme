@@ -2,7 +2,7 @@
   "name": "car-rental-supreme",
   "version": "0.1.0",
   "description": "a full-stack car rental system",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,7 +17,8 @@
     "mongoose",
     "ejs",
     "mocha",
-    "chai"
+    "chai",
+    "sass"
   ],
   "author": "Kevin Martinez",
   "license": "MIT",
@@ -28,6 +29,9 @@
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "node-sass-middleware": "^0.11.0",
+    "nodemon": "^1.17.1",
     "standard": "^11.0.0"
-  }
+  },
+  "devDependencies": {}
 }
