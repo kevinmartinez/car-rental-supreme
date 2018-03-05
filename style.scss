@@ -1,7 +1,26 @@
+$main-padding: 25px;
+
 body {
     background: lightblue;
     h1 {
         color: white;
         text-transform: uppercase;
     }
+}
+
+main {
+    min-height: 100vh;
+    background: whitesmoke;
+    border: 20px solid rebeccapurple;
+}
+
+.main-header {
+    border: 5px solid burlywood;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.main-footer {
+    border: 10px solid goldenrod;
+    padding: $main-padding;
 }
