@@ -1,16 +1,1 @@
-body{background:lightblue}body h1{color:white;text-transform:uppercase}main{min-height:100vh;background:whitesmoke;border:20px solid rebeccapurple}.main-header{border:5px solid burlywood;padding:5px;text-transform:uppercase}.main-footer{border:10px solid goldenrod;padding:25px}
-
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.header-cars {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    text-align: center;
-}
-
-.brand-bmw-x6 img {
-    max-width: 400px;
-}
+body{background:goldenrod}body h1{color:white;text-transform:uppercase}main{min-height:100vh;background:whitesmoke;border:20px solid rebeccapurple}.main-header{border:5px solid burlywood;padding:5px;text-transform:uppercase}.main-footer{border:10px solid goldenrod;padding:25px}img{max-width:500px}

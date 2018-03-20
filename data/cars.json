@@ -1,0 +1,39 @@
+{
+  "cars": [
+    {
+      "brand": "audi",
+      "name": "a8",
+      "year": 2017,
+      "transmission": "automatic",
+      "color": "red"
+    },
+    {
+      "brand": "audi",
+      "name": "a8",
+      "year": 2017,
+      "transmission": "automatic",
+      "color": "black"
+    },
+    {
+      "brand": "bmw",
+      "name": "x6",
+      "year": 2015,
+      "transmission": "manual",
+      "color": "white"
+    },
+    {
+      "brand": "bmw",
+      "name": "x6",
+      "year": 2015,
+      "transmission": "manual",
+      "color": "black"
+    },
+    {
+      "brand": "volvo",
+      "name": "xc90",
+      "year": 2014,
+      "transmission": "automatic",
+      "color": "black"
+    }
+  ]
+}
