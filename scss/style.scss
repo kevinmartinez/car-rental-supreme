@@ -1,17 +1,4 @@
 @import "./base/index";
 @import "./fonts/index";
+@import "./layout/index";
 @import "./components/index";
-
-.main-header {
-    border: 5px solid burlywood;
-    padding: 5px;
-}
-
-.main-footer {
-    border: 10px solid goldenrod;
-    padding: $main-padding;
-}
-
-img {
-    max-width: 500px;
-}

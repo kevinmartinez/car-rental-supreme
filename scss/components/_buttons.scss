@@ -1,4 +1,8 @@
 button {
-    padding: 25px;
-    border: 2px solid red;
+    padding: 30px;
+    border: 15px solid $purple;
+    outline: 5px solid $orange;
+    color: $ice-cream-pink;
+    background: $yellow;
+    text-transform: lowercase;
 }
