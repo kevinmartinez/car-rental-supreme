@@ -1,23 +1,10 @@
-$main-padding: 25px;
-
-body {
-    background: goldenrod;
-    h1 {
-        color: white;
-        text-transform: uppercase;
-    }
-}
-
-main {
-    min-height: 100vh;
-    background: whitesmoke;
-    border: 20px solid rebeccapurple;
-}
+@import "./base/index";
+@import "./fonts/index";
+@import "./components/index";
 
 .main-header {
     border: 5px solid burlywood;
     padding: 5px;
-    text-transform: uppercase;
 }
 
 .main-footer {
