@@ -31,7 +31,7 @@
     "chai": "^4.1.2",
     "ejs": "^2.5.7",
     "express": "^4.16.3",
-    "mocha": "^5.0.4",
+    "mocha": "^5.0.5",
     "node-sass-middleware": "^0.11.0",
     "nodemon": "^1.17.2",
     "standard": "^11.0.1"
