@@ -1,11 +1,14 @@
 'use strict'
 
 const express = require('express')
-const routes = require('./routes/index')
-const sass = require('node-sass-middleware')
+const routes = require('./routes/routes.index') // import routes
+const sass = require('node-sass-middleware') // Express sass middleware
 const path = require('path')
-const reload = require('reload')
+const reload = require('reload') // Live reload
 const app = express()
+
+// What is routes? a node module?
+console.log(routes)
 
 app.set('port', process.env.PORT || 3000)
 app.set('view engine', 'ejs')
@@ -20,7 +23,7 @@ app.use(sass({
   src: 'scss',
   dest: path.join(__dirname, 'public/css'),
   debug: true,
-  outputStyle: 'compressed',
+  outputStyle: 'expanded',
   prefix: '/css' // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
 }))
 // sass-middleware *before* `express.static`

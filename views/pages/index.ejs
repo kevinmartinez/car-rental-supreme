@@ -1,9 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <% include ../partials/head %>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= appTitle %> | <%= title %></title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-  <% include ../partials/header %>
-  <% include ../partials/main %>
-  <% include ../partials/footer %>
+<div class="grid">
+  <header class="header">
+    <h1>Car Rental Supreme</h1>
+    <button>Push me to the limit</button>
+  </header>
+  <main>
+    <header class="header-cars">
+      <h2>Our cars</h2>
+    </header>
+    <!-- Large sized cars -->
+    <section class="cars">
+      <header>
+        <h3>Large cars</h3>
+      </header>
+      <article class="brand-bmw-x6">
+        <header>
+          <h3>BMW X6</h3>
+        </header>
+        <a href="/cars">
+          <img src="/img/bmw_x6_black.jpg" alt="">
+          <p>Panda panda panda</p>
+        </a>
+      </article>
+    </section>
+    <!-- Medium sized cars -->
+    <section class="cars">
+      <header>
+        <h3>Medium cars</h3>
+      </header>
+      <article>
+        <header>
+          <h3>Volvo</h3>
+        </header>
+        <p>Svenssonlivet</p>
+        <ul>
+          <li>Stick</li>
+          <li>Roof Rack</li>
+          <li>80$ / Day</li>
+        </ul>
+      </article>
+    </section>
+    <!-- Small sized cars -->
+    <section class="cars">
+      <header>
+        <h3>Medium cars</h3>
+      </header>
+      <article>
+        <header>
+          <h3>Golf GTI</h3>
+        </header>
+        <p>The race is on</p>
+        <ul>
+          <li>Automatic</li>
+          <li>No Roof Rack</li>
+          <li>50$ / Day</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+  <div class="main-footer">
+    <p>&copy; <%= currentYear %></p>
+  </div>
+</div>
+
+<script src="/js/client.js"></script>
+<script src="/reload/reload.js"></script>
 </body>
 </html>

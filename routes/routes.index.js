@@ -1,19 +1,13 @@
 'use strict'
 const data = require('../api/cars.json')
+const mainController = require('../controllers/mainController')
+const carsController = require('../controllers/carsController')
 
 // Set up routes
 module.exports = (app) => {
-  app.get('/', (req, res) => {
-    res.render('pages/index', {
-      title: 'Home'
-    })
-  })
+  app.get('/', mainController.home)
 
-  app.get('/cars', (req, res) => {
-    res.render('pages/cars', {
-      title: 'Cars'
-    })
-  })
+  app.get('/cars', carsController.cars)
 
   app.get('/boo', (req, res) => {
     let cars = ''
