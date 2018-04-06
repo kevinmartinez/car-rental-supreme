@@ -331,7 +331,8 @@ template {
 }
 
 body {
-  background: yellow;
+  background: goldenrod;
+  border: 25px solid rebeccapurple;
 }
 
 * {
