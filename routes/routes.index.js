@@ -1,5 +1,5 @@
 'use strict'
-const data = require('../api/cars.json')
+import data from '../api/cars.json'
 const mainController = require('../controllers/mainController')
 const carsController = require('../controllers/carsController')
 
@@ -16,9 +16,12 @@ module.exports = (app) => {
     data.cars.forEach((car) => {
       cars += `
         <h3>${car.brand}</h3>
+        <p>hmmm</p>
         <h4>${car.name}</h4>
         <li>Color: <strong>${car.color}</strong></li>
-        <li>Transmission: ${car.transmission}</li>`
+        <li>Transmission: ${car.transmission}</li>
+        <li>YES</li>
+        `
     })
     console.dir(cars)
     res.send(`<div>${cars}</div>`)

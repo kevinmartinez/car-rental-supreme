@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "mocha",
-    "start": "nodemon server.js -e scss,ejs"
+    "start": "nodemon ./server.js --exec babel-node -e js",
+    "scss": "node-sass --watch scss -o public/css"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,9 @@
     "ejs",
     "mocha",
     "chai",
-    "sass"
+    "sass",
+    "es2015",
+    "babel"
   ],
   "author": "Kevin Martinez",
   "license": "MIT",
@@ -32,11 +35,13 @@
     "ejs": "^2.5.8",
     "express": "^4.16.3",
     "mocha": "^5.0.5",
-    "node-sass-middleware": "^0.11.0",
+    "node-sass": "^4.8.3",
     "nodemon": "^1.17.2",
     "standard": "^11.0.1"
   },
   "devDependencies": {
-    "reload": "^2.2.2"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1"
   }
 }
