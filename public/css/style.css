@@ -330,11 +330,6 @@ template {
   display: none;
 }
 
-body {
-  background: goldenrod;
-  border: 25px solid rebeccapurple;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -373,18 +368,18 @@ body h1 {
 }
 
 .header-main {
-  background: red;
+  border: 5px solid green;
   min-height: 100vh;
 }
 
 .login {
-  background: green;
+  border: 2px solid green;
   padding: 5px;
   text-align: right;
 }
 
 .nav-main {
-  background: blue;
+  border: 2px solid red;
   display: flex;
 }
 
@@ -407,12 +402,6 @@ li:nth-child(3) {
 
 li:nth-child(4) {
   background: white;
-}
-
-.hero {
-  background-image: url("../img/bmw-x6-black-full-bg.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 button {

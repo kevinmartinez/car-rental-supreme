@@ -17,7 +17,7 @@ app.set('view engine', 'ejs')
 app.locals.appTitle = 'Car Rental Supreme'
 app.locals.currentYear = new Date().getFullYear()
 
-// Sass middleware
+// Sass middleware, must go *before* `express.static`
 app.use(sass({
   /* Options */
   src: 'scss',
@@ -26,7 +26,7 @@ app.use(sass({
   outputStyle: 'expanded',
   prefix: '/css' // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
 }))
-// sass-middleware *before* `express.static`
+
 app.use(express.static(path.join(__dirname, '/public')))
 
 routes(app)
