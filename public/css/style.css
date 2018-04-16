@@ -372,6 +372,49 @@ body h1 {
   color: red;
 }
 
+.header-main {
+  background: red;
+  min-height: 100vh;
+}
+
+.login {
+  background: green;
+  padding: 5px;
+  text-align: right;
+}
+
+.nav-main {
+  background: blue;
+  display: flex;
+}
+
+.nav-main--items {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-main--items li:first-child {
+  background: green;
+}
+
+li:nth-child(2) {
+  background: yellow;
+}
+
+li:nth-child(3) {
+  background: #00ff95;
+}
+
+li:nth-child(4) {
+  background: white;
+}
+
+.hero {
+  background-image: url("../img/bmw-x6-black-full-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 button {
   padding: 30px;
   border: 15px solid #be90d4;
