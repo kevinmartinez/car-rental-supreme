@@ -1,24 +1,15 @@
 .nav-main {
-  border: 2px solid red;
   display: flex;
 }
 
 .nav-main--items {
   display: flex;
   list-style-type: none;
-  li:first-child {
-    background: green;
+    li {
+      border: 1px solid black;
+      padding: $small-padding;
+      &:first-child {
+      background: greenyellow;
+    }
   }
-}
-
-li:nth-child(2) {
-  background: yellow;
-}
-
-li:nth-child(3) {
-  background: rgb(0, 255, 149);
-}
-
-li:nth-child(4) {
-  background: white;
 }

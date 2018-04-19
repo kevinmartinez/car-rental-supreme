@@ -1,6 +1,6 @@
 /* eslint-env mocha */
 const assert = require('assert')
-const chai = require('chai') // FIX THIS
+const chai = require('chai')
 
 describe('Array', function () {
   describe('#indexOf()', function () {
