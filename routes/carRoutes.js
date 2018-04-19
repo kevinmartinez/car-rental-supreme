@@ -1,21 +1,13 @@
 'use strict'
-import { cars } from '../controllers/carController'
+import { addNewCar } from '../controllers/carController'
 
 // Set up some end points, check if they work
 const routes = (app) => {
   app.route('/cars')
-    .get(cars)
-    .post((req, res) => {
-      res.send('POST request successfull!')
+    .get((req, res) => {
+      res.send(`<h1>Cars</h1>`)
     })
-
-  app.route('/cars/:carId')
-    .put((req, res) => {
-      res.send('PUT request successfull!')
-    })
-    .delete((req, res) => {
-      res.send('DELETE request successfull!')
-    })
+    .post(addNewCar)
 }
 
 export default routes

@@ -1,8 +1,18 @@
 import express from 'express'
+import mongoose from 'mongoose'
+import bodyParser from 'body-parser'
 import routes from './routes/carRoutes'
 
 const app = express()
 const port = 3030
+
+// Create mongoose connection
+mongoose.Promise = global.Promise
+mongoose.connect('mongodb://localhost/car-rental-supreme')
+
+// Set up body-parser
+app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.json())
 
 app.use(express.static(('public')))
 
