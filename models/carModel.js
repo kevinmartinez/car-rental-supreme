@@ -1,5 +1,4 @@
 'use strict'
-
 import mongoose from 'mongoose'
 
 const Schema = mongoose.Schema
@@ -16,6 +15,9 @@ const CarSchema = new Schema({
   size: {
     type: String
   },
+  color: {
+    type: String
+  },
   cost: {
     type: Number
   },
@@ -26,7 +28,12 @@ const CarSchema = new Schema({
     type: Boolean
   },
   roofRack: {
-    type: Boolean
+    type: Boolean,
+    default: false
+  },
+  available: {
+    type: Boolean,
+    default: true
   }
 })
 

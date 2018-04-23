@@ -1,3 +1,4 @@
+'use strict'
 import express from 'express'
 import mongoose from 'mongoose'
 import bodyParser from 'body-parser'
@@ -9,6 +10,9 @@ const port = 3030
 // Create mongoose connection
 mongoose.Promise = global.Promise
 mongoose.connect('mongodb://localhost/car-rental-supreme')
+mongoose.connection.on('error', (err) => {
+  console.log(err.message)
+})
 
 // Set up body-parser
 app.use(bodyParser.urlencoded({ extended: true }))
@@ -23,7 +27,7 @@ app.set('view engine', 'ejs')
 app.locals.appTitle = 'Car Rental Supreme'
 app.locals.currentYear = new Date().getFullYear()
 
-// Run routes function from routes.index.js
+// Run Express app in our routes function
 routes(app)
 
 app.listen(port, () => {
