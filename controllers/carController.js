@@ -1,24 +1,28 @@
 'use strict'
-import mongoose from 'mongoose'
-import { CarSchema } from '../models/carModel'
-
-const Car = mongoose.model('Car', CarSchema)
+import Car from '../models/carModel'
 
 // Add to db
-const addNewCar = (req, res) => {
+export const addNewCar = async (req, res) => {
   let newCar = new Car(req.body)
-  console.log(req.body)
-  newCar.save((error, car) => {
-    if (error) {
-      res.send(error)
-    }
-    res.json(car)
-  })
+  try {
+    await newCar.save()
+    console.log('New car saved')
+  } catch (err) {
+    res.send(err.message)
+  }
 }
 
 // Get from db
-const getCar = (req, res) => {
-
+export const getCars = async (req, res) => {
+  // 1. Query the database for a list of all stores
+  let cars
+  try {
+    cars = await Car.find()
+  } catch (err) {
+    res.send('Error')
+  }
+  res.render('pages/cars', {
+    title: 'Our Cars',
+    cars
+  })
 }
-
-export { addNewCar }

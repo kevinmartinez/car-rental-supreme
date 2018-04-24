@@ -1,6 +1,6 @@
 'use strict'
 
-module.exports.home = (req, res) => {
+export const home = (req, res) => {
   res.render('pages/index', {
     title: 'Home'
   })

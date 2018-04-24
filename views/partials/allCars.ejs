@@ -1,0 +1,16 @@
+<div class="grid cars-showcase">
+  <% for(var i=0; i < cars.length; i++) { %>
+  <ul>
+    <header>
+      <h2><%= cars[i].brand %></h2>
+    </header>
+    <li>Model: <%= cars[i].model %></li>
+    <li>Color: <%= cars[i].color %></li>
+    <li>Automatic: <%= cars[i].automatic %></li>
+    <li>Roof Rack: <%= cars[i].roofRack %></li>
+    <li>Size: <%= cars[i].size %></li>
+    <li><%= cars[i].cost %>$ / Day</li>
+    <li><strong>Available: </strong> <%= cars[i].available %></li>
+  </ul>
+  <% } %>
+</div>

@@ -1,32 +1,14 @@
 'use strict'
 import mongoose from 'mongoose'
 
-const Schema = mongoose.Schema
-const CarSchema = new Schema({
-  brand: {
-    type: String
-  },
-  model: {
-    type: String
-  },
-  year: {
-    type: Number
-  },
-  size: {
-    type: String
-  },
-  color: {
-    type: String
-  },
-  cost: {
-    type: Number
-  },
-  automatic: {
-    type: Boolean
-  },
-  manual: {
-    type: Boolean
-  },
+const CarSchema = new mongoose.Schema({
+  brand: String,
+  model: String,
+  size: String,
+  color: String,
+  cost: Number,
+  automatic: Boolean,
+  manual: Boolean,
   roofRack: {
     type: Boolean,
     default: false
@@ -37,4 +19,6 @@ const CarSchema = new Schema({
   }
 })
 
-export { CarSchema }
+let CarsModel = mongoose.model('Car', CarSchema)
+
+export default CarsModel

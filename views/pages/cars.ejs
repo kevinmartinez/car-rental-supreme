@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <% include ../partials/head %>
+  <head>
+    <% include ../partials/head %>
+    <% include ../partials/styles %>
+  </head>
 <body>
   <h1>Cars</h1>
-  <% include ../partials/header %>
-  <main>
-    <header>
-      BMW X6
-    </header>
-    <p>Panda, panda, panda</p>
-    <ul>
-      <li>Automatic</li>
-      <li>Roof Rack</li>
-      <li>100$ / Day</li>
-    </ul>
-  </main>
+  <!-- Showcase of ALL cars -->
+  <%include ../partials/allCars %>
+  <!-- Main footer -->
   <% include ../partials/footer %>
+  <!-- JavaScript -->
+  <% include ../partials/scripts %>
 </body>
 </html>

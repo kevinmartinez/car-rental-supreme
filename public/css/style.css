@@ -351,6 +351,13 @@ body {
 .hero {
   border: 4px solid rebeccapurple; }
 
+.cars-showcase ul {
+  list-style-type: none;
+  border: 2px solid black;
+  margin-right: 5px; }
+  .cars-showcase ul:last-of-type {
+    margin-right: 0; }
+
 button {
   padding: 30px;
   border: 15px solid #be90d4;
